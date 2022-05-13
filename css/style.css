@@ -1,0 +1,179 @@
+.card {
+    background-color: var(--white-color);
+    box-shadow: 0 15px 50px rgb(0 0 0 / 20%);
+    padding: 2rem 2rem;
+    width: 55rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+  }
+  .search__box {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .search__card {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .search__card h1 {
+    align-self: flex-start;
+    padding: 0rem 7rem;
+  }
+  .search__box input {
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    padding: 1.3rem 2.8rem;
+    border: 1px solid rgb(0 0 0 / 17%);
+    position: relative;
+    width: 30rem;
+    font-size: 1.3rem;
+    transition: border-color 0.15s ease-in-out;
+    -webkit-transition: border-color 0.15s ease-in-out;
+    -moz-transition: border-color 0.15s ease-in-out;
+    -ms-transition: border-color 0.15s ease-in-out;
+    -o-transition: border-color 0.15s ease-in-out;
+    outline: 0;
+    font-weight: 500;
+  }
+  .search__box input:focus,
+  .search__box input:active {
+    border: 1px solid #465176;
+  }
+  .search__box .btn {
+    background: var(--gradient-bg-1);
+    display: block;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    box-shadow: 0 5px 20px var(--main-color);
+    transition: box-shadow 0.3s ease-in-out;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    border: none;
+  }
+  .search__box .btn:hover {
+    box-shadow: none;
+  }
+  .profile__card {
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .profile__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32%;
+    position: relative;
+  }
+  .profile__img .check {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    background: var(--gradient-bg-2);
+    color: var(--white-color);
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+  }
+  .profile__details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .profile__img img {
+    border-radius: 10rem;
+  }
+  .profile__details {
+    width: 62%;
+  }
+  .profile__stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.7rem;
+    flex-wrap: wrap;
+  }
+  .profile__details h2 {
+    font-size: 2rem;
+  }
+  .profile__username {
+    font-size: 1.2rem;
+    color: var(--primaray-color-2);
+    font-weight: 600;
+  }
+  .stats__box {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+  }
+  .stats__value {
+    font-weight: 700;
+    font-size: 1.6rem;
+  }
+  .stats__parameter {
+    font-size: 1.2rem;
+    color: var(--primaray-color-2);
+  }
+  .profile__bio {
+    font-size: 1.5rem;
+    margin-top: 0.4rem;
+  }
+  .at-icon {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 43px;
+    font-size: 14px;
+    line-height: 44px;
+    text-align: left;
+    color: var(--primary-color-1);
+  }
+  .search__box input:focus + .at-icon {
+    color: var(--primary-color);
+  }
+  .profile__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .profile__btns {
+    display: flex;
+    gap: 1rem;
+  }
+  .btn__option {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #2e4052;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 16%);
+  }
+  .btn--user {
+    background: var(--gradient-bg-1);
+    color: var(--white-color);
+  }
+  .btn--more {
+    background-color: var(--primaray-color-3);
+  }

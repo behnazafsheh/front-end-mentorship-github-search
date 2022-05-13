@@ -1,16 +1,82 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github Search </title>
+    <title>github profile</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/toastify.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
+
 <body>
-    <p>Lorem ipsum dolor sit 
-        amet, consectetur adipisicing elit. 
-        Eos nemo cupiditate numquam. Tempora quidem quibusdam
-         dignissimos. Odio, eaque repellat, sapiente aut, hic 
-         possimus beatae quaerat veritatis nesciunt velit non omnis.</p>
+    <main>
+        <section class="search" id="search">
+            <div class="container flex justify-content-center">
+                <div class="card search__card">
+                    <h1> Github user search</h1>
+                    <div class="search__box">
+                        <input type="text" id="userName" placeholder="Enter username here">
+                        <i class="at-icon fa-solid fa-at"></i>
+
+                        <button class="btn" id="btnSearch" type="submit">
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="search-result" id="search-result">
+            <div class="container flex justify-content-center">
+                <div class="card profile__card d-none">
+                    <div class="profile__img">
+                        <img id="profilePic" src="" alt="profile image">
+                        <div id="hireable-icon" class="check ">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="profile__details">
+                        <div class="profile__header">
+                            <div class="header__name">
+                                <h2 id="profileName">name</h2>
+                                <p class="profile__username" id="profileUserName">username</p>
+                            </div>
+                            <div class="profile__btns">
+                                <a href="#" class="btn__option btn--user">
+                                    <i class="fa-solid fa-user-plus"></i></a>
+                                <a href="#" class="btn__option btn--more">
+                                    <i class="fa-solid fa-ellipsis"></i></a>
+                            </div>
+                        </div>
+                        <div class="profile__stats">
+                            <div class="stats__box">
+                                <span id="userRepos" class="stats__value">123</span>
+                                <span class="stats__parameter">repositories</span>
+                            </div>
+                            <div class="stats__box">
+                                <span id="userFollowers" class="stats__value">123</span>
+                                <span class="stats__parameter">followers</span>
+                            </div>
+                            <div class="stats__box">
+                                <span id="userFollowing" class="stats__value">133</span>
+                                <span class="stats__parameter">following </span>
+                            </div>
+                        </div>
+                        <p id="profileUserBio" class="profile__bio"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="js/toastify-js.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

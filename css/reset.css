@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+:root {
+  --white-color: #fff;
+  --main-color: #89caff94;
+  --primary-color: #6589ff;
+  --primary-color-1: #85888c;
+  --primaray-color-2: #707a89;
+  --primaray-color-3: #d5d5d5;
+  --body-bg: linear-gradient(to right, #f5e9ff, #cedeff);
+  --gradient-bg-1: linear-gradient(to right, #89caff, #6589ff);
+  --gradient-bg-2: linear-gradient(to right, #80a9cb, #6589ff);
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Urbanist", sans-serif;
+  background: var(--body-bg);
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+ul,
+li {
+  list-style: none;
+  list-style-type: none;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+a {
+  text-decoration: none;
+}
+section {
+  padding: 3.7em 0 0;
+}
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+.flex {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  /* gap: var(--gap, 1rem); */
+}
+.d-block {
+  display: block;
+}
+.d-none {
+  display: none !important;
+}
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  width: 1100px;
+  max-width: 100%;
+}
+.col {
+  width: 100%;
+}
+.col + .col {
+  margin-left: 3rem;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+.ml-0 {
+  margin-left: 0;
+}
+.mr-0 {
+  margin-left: 0;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.position-absolute {
+  position: absolute;
+}
+/* ------------------- */
+/* Compontents         */
+/* ------------------- */
+.toastify {
+  font-size: 1.2rem;
+}
+.toast-close {
+  padding: 0 1rem;
+}
